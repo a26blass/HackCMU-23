@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,30 +18,35 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ayu-RK-7DL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launching…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXN-m6-jsx">
-                                <rect key="frame" x="115.5" y="316.5" width="144" height="34"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="MEDISCAN" translatesAutoresizingMaskIntoConstraints="NO" id="zDN-Xh-Woh">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zDN-Xh-Woh" secondAttribute="height" multiplier="390:763" id="Ftr-Is-XQD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0wO-3D-Cht"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SXN-m6-jsx" firstAttribute="centerY" secondItem="0wO-3D-Cht" secondAttribute="centerY" id="Tjl-Zk-za8"/>
-                            <constraint firstItem="SXN-m6-jsx" firstAttribute="centerX" secondItem="0wO-3D-Cht" secondAttribute="centerX" id="f2e-KL-vRJ"/>
+                            <constraint firstItem="0wO-3D-Cht" firstAttribute="trailing" secondItem="zDN-Xh-Woh" secondAttribute="trailing" id="OBW-yG-2uz"/>
+                            <constraint firstItem="zDN-Xh-Woh" firstAttribute="trailing" secondItem="0wO-3D-Cht" secondAttribute="trailing" id="PfY-a3-Pqc"/>
+                            <constraint firstItem="zDN-Xh-Woh" firstAttribute="top" secondItem="0wO-3D-Cht" secondAttribute="top" id="Q0g-WW-hIm"/>
+                            <constraint firstItem="zDN-Xh-Woh" firstAttribute="bottom" secondItem="0wO-3D-Cht" secondAttribute="bottom" id="aYk-Gb-Mj0"/>
+                            <constraint firstItem="0wO-3D-Cht" firstAttribute="bottom" secondItem="zDN-Xh-Woh" secondAttribute="bottom" id="fmy-zx-bBY"/>
+                            <constraint firstItem="zDN-Xh-Woh" firstAttribute="leading" secondItem="0wO-3D-Cht" secondAttribute="leading" id="hbq-uB-Qq8"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="50.769230769230766" y="374.64454976303318"/>
         </scene>
     </scenes>
     <resources>
+        <image name="MEDISCAN" width="360" height="640"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -7,14 +7,16 @@ The view controller that selects an image and makes a prediction using Vision an
 
 import UIKit
 
+
 class MainViewController: UIViewController {
+
     var firstRun = true
 
     /// A predictor instance that uses Vision and Core ML to generate prediction strings from a photo.
     let imagePredictor = ImagePredictor()
 
     /// The largest number of predictions the main view controller displays the user.
-    let predictionsToShow = 2
+    let predictionsToShow = 1
 
     // MARK: Main storyboard outlets
     @IBOutlet weak var startupPrompts: UIStackView!
@@ -121,7 +123,7 @@ extension MainViewController {
                 name = String(name.prefix(upTo: firstComma))
             }
 
-            return "\(name) - \(prediction.confidencePercentage)%"
+            return "\(name)"
         }
 
         return topPredictions
